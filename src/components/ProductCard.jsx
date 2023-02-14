@@ -27,6 +27,9 @@ export default class ProductCard extends Component {
           <div>قیمت</div>
           <div>2,220,000</div>
         </div>
+        <div className="card--btn">
+          <button className="btn btn-primary ">اضافه کردن به سبد خرید</button>
+        </div>
       </div>
     );
   }
