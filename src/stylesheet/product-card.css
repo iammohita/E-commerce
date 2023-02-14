@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "btitr";
+  src: url("../fonts/BTITRBD.TTF");
+}
+@font-face {
+  font-family: "bnazanin";
+  src: url("../fonts/BNAZANB.TTF");
+}
+
+.card-container {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background-color: rgb(243, 240, 240);
+  padding: 1rem;
+  margin: 2rem;
+}
+.card--image {
+  align-self: center;
+}
+.card--name {
+  font-size: 21px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "btitr";
+  margin: 1rem 0.5rem;
+}
+.card--name--details {
+  font-family: "bnazanin";
+  font-size: 20px;
+}
+
+.card--price {
+  font-size: 21px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "btitr";
+  margin: 1rem 0.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .card-container {
+    flex-direction: column;
+    width: 50%;
+  }
+  .card--name {
+    display: block;
+    justify-content: space-between;
+    margin: 0.5rem 0.25rem;
+  }
+  .card--price {
+    margin: unset;
+  }
+}
