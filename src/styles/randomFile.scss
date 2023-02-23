@@ -1,0 +1,8 @@
+// how we use declared variables in scss
+
+@import url(./statics/variables.scss);
+
+.randomClassName {
+  color: $red;
+  background-color: $blue-lighten;
+}

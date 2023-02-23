@@ -1,16 +1,15 @@
 @font-face {
   font-family: "btitr";
-  src: url(../src/fonts/BTITRBD.TTF);
+  src: url(./styles/fonts/BTITRBD.TTF);
 }
+
 body {
   margin: 0;
   font-family: "btitr";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-div {
-  font-family: "btitr";
-}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
