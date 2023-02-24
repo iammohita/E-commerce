@@ -7,16 +7,16 @@ const ProductList = () => {
     
         async function getProducts(){
         const {data: {products}} = await axios.get("https://dummyjson.com/products");
+
         setProduct(products)
-        }
-        
-        useEffect(()=>{
-            getProducts()
-    },[])
+    }
+
+    useEffect(()=>{
+        getProducts()
+    },[]);
+
   return (
-    <div>
-    
-    </div>
+    <div></div>
   )
 }
 
