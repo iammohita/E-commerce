@@ -6,7 +6,6 @@ const ProductList = () => {
 
   async function initData() {
     const products = await getProducts();
-    console.log(products);
     setProduct(products);
   }
 
