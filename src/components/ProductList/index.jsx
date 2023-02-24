@@ -1,23 +1,20 @@
-// Your product-list will be rendered here
-import  {useState,useEffect} from 'react'
-import axios from 'axios'
+import { useState, useEffect } from "react";
+import getProducts from "./requests";
 
 const ProductList = () => {
-    const [products, setProduct] = useState([]);
-    
-        async function getProducts(){
-        const {data: {products}} = await axios.get("https://dummyjson.com/products");
+  const [products, setProduct] = useState([]);
 
-        setProduct(products)
-    }
+  async function initData() {
+    const products = await getProducts();
+    console.log(products);
+    setProduct(products);
+  }
 
-    useEffect(()=>{
-        getProducts()
-    },[]);
+  useEffect(() => {
+    initData();
+  }, []);
 
-  return (
-    <div></div>
-  )
-}
+  return <div></div>;
+};
 
-export default ProductList
+export default ProductList;
